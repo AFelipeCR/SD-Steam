@@ -6,6 +6,11 @@ import javax.swing.JFrame;
 
 import afcr.sd.cs.utilities.AppConstants;
 
+/**
+ * 
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class MainFrame extends JFrame implements AppConstants {
 	private static final long serialVersionUID = 1L;
 	

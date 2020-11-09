@@ -1,4 +1,4 @@
-package afcr.sd.cs.models;
+package afcr.sd.cs.connection;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -12,8 +12,13 @@ import java.util.List;
 import java.util.Random;
 import java.util.logging.Logger;
 
+import afcr.sd.cs.models.Game;
 import afcr.sd.cs.utilities.ImageReader;
 
+/**
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class Server extends ServerSocket{
 	private static final String Game_Command = "steam/games/";
 	private static final String Cover_Command = "steam/covers/?id=";
@@ -110,6 +115,11 @@ public class Server extends ServerSocket{
 		}).start();;
 	}
 	
+	/**
+	 * Separa la información de la ruta de comando
+	 * @param request ruta
+	 * @return información separada
+	 */
 	private String[] extractInfo(String request) {
 		String data;
 		if(request.contains(Game_Command)) {
@@ -123,6 +133,9 @@ public class Server extends ServerSocket{
 		return null;
 	}
 	
+	/**
+	 * busca un juego con el nombre ingresado
+	 */
 	Game findGame(String name) {
 		for (Game game : this.games) {
 			if(game.getName().contentEquals(name))

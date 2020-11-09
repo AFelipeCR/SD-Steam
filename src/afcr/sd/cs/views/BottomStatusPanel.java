@@ -6,10 +6,15 @@ import java.net.UnknownHostException;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import afcr.sd.cs.models.Client;
+import afcr.sd.cs.connection.Client;
 import afcr.sd.cs.utilities.AppConstants;
 import afcr.sd.cs.utilities.ConfigVariables;
 
+/**
+ * 
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class BottomStatusPanel extends JPanel implements AppConstants{
 	private static final long serialVersionUID = 2L;
 	

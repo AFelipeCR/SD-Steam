@@ -1,5 +1,10 @@
 package afcr.sd.cs.models;
 
+/**
+ * 
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class Game {
 	private String name;
 	private String imageURL;

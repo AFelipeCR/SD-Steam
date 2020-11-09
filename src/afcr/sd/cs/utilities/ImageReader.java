@@ -8,6 +8,11 @@ import java.io.IOException;
 
 import javax.imageio.ImageIO;
 
+/**
+ * 
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class ImageReader {
 	private String path;
 	private BufferedImage bi;

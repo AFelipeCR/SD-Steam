@@ -7,6 +7,11 @@ import javax.swing.JPanel;
 
 import afcr.sd.cs.utilities.AppConstants;
 
+/**
+ * 
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class MainPanel extends JPanel {
 	private static final long serialVersionUID = 3L;
 	private Image image;

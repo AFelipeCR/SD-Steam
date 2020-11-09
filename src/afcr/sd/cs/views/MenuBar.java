@@ -11,11 +11,16 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 
-import afcr.sd.cs.models.Client;
+import afcr.sd.cs.connection.Client;
 import afcr.sd.cs.utilities.AppConstants;
 import afcr.sd.cs.utilities.ConfigVariables;
 import afcr.sd.cs.utilities.ImageReader;
 
+/**
+ * 
+ * @author Andrés Felipe Chaparro Rosas
+ * @date 7/11/2020
+ */
 public class MenuBar extends JMenuBar implements ActionListener, AppConstants {
 	private static final long serialVersionUID = 4L;
 	private static final String REGISTER_COMMAND = "Register";
