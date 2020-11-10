@@ -52,7 +52,7 @@ public class Client extends Socket {
 	 */
 	public byte[] receiveBytes() throws IOException {
 		byte[] data = new byte[this.dis.readInt()];
-		this.dis.read(data);
+		this.dis.readFully(data);
 		return data;
 	}
 	
